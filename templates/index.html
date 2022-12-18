@@ -1,0 +1,22 @@
+{%- extends 'base.html' %}
+{%- block content %}
+
+<h1>どれかえらべ</h1>
+	<div>
+		<select id="anyasel">
+			{%- for row in items %}
+				{%- if row[0] == 1 %}
+			<option value="{{row[0]}}" selected>アーニャ{{row[0]}}</option>
+				{%- else %}
+			<option value="{{row[0]}}">アーニャ{{row[0]}}</option>
+				{%- endif %}
+			{%- endfor %}
+		</select>
+	</div>
+	<div><button id="anyalang">はやくおせ</button></div>
+	<div>
+		<p id="anyaid"></p>
+		<p id="anyamsg"></p>
+	</div>
+</form>
+{%- endblock %}

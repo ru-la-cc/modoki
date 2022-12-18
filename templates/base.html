@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/sanitize.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	<title>{{title_name}}</title>
+</head>
+<body>
+	<header>
+		<h3>{{title_name}}のとりあえず何か・・・</h3>
+	</header>
+	
+	{% block content %}
+	{% endblock %}
+
+	<footer>
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.6.2.min.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/test.js')}}"></script>
+	</footer>
+</body>
+</html>

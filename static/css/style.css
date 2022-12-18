@@ -1,0 +1,29 @@
+header {
+	background-color: aqua;
+}
+
+select {
+	font-size: 16pt;
+	padding: 5px;
+	margin: 10px;
+}
+
+button {
+	font-size: 16pt;
+	margin: 10px;
+}
+
+footer {
+	background-color: aqua;
+}
+#anyaid {
+	font-size: 20pt;
+	margin: 10px;
+	color: magenta;
+}
+
+#anyamsg {
+	font-size: 20pt;
+	margin: 10px;
+	color: deeppink;
+}
