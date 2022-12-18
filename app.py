@@ -1,13 +1,8 @@
 import flask as f
-import hashlib
-import datetime
 import sqlite3
 import json
 
-g_jst = datetime.timezone(datetime.timedelta(hours=9))
-
 app = f.Flask(__name__)
-app.config['SECRET_KEY'] = hashlib.sha256("SAMPLE_00000000000001".encode()).hexdigest()
 
 @app.route("/")
 def index():
